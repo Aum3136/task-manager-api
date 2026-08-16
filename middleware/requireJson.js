@@ -1,4 +1,3 @@
-// Rejects POST/PUT requests that don't declare JSON content.
 function requireJson(req, res, next) {
   if (req.method === 'POST' || req.method === 'PUT') {
     const contentType = req.headers['content-type']
